@@ -4,8 +4,10 @@
 
 {% block content %}
 
-<div class="bg-purple w-full border border-black">
-    <div class="container mx-auto rounded-t shadow bg-cover bg-bottom" style="background-image: url(https://i.imgur.com/R68RNUK.jpg)">
+{% image self.banner_image fill-1000x200-c100  as img %}
+
+<div class="w-full border border-black bg-cover" style="background-image: url('{{img.url}}');">
+    <div class="container mx-auto rounded-t shadow">
       
       <div class="text-center text-white pb-16">
         <h1 class="font-sans font-thin">{{ self.banner_title }}</h1>
