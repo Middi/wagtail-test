@@ -9,9 +9,9 @@
 <div class="w-full border border-black bg-cover" style="background-image: url('{{img.url}}');">
     <div class="container mx-auto rounded-t shadow">
       
-      <div class="text-center text-white pb-16">
-        <h1 class="font-sans font-thin">{{ self.banner_title }}</h1>
-        <h2 class="font-thin text-sm tracking-wide mt-2 mb-4">{{ self.banner_subtitle | richtext }}</h2>
+      <div class="text-center text-black pb-16">
+        <h1 class="font-sans text-3xl">{{ self.banner_title }}</h1>
+        <h2 class="font-thin tracking-wide mt-2 mb-4">{{ self.banner_subtitle | richtext }}</h2>
     
         {% if self.banner_cta %}
             <a href="#" class="rounded bg-orange text-white p-4 font-bold inline-block mb-16">
